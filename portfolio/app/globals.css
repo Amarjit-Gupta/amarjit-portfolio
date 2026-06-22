@@ -753,7 +753,7 @@ textarea {
 
   .project1 {
     grid-template-columns: repeat(1, 28.5rem);
-    grid-template-rows: repeat(11, 45rem);
+    grid-template-rows: repeat(12, 45rem);
   }
 
   .scroll-btn {
