@@ -2,6 +2,10 @@
 * {
   margin: 0px;
   padding: 0px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 html {
@@ -157,21 +161,23 @@ html {
   color: black;
   display: block;
   margin-top: 0.6rem;
+   transition: transform 0.5s ease;
 }
 
 .txt4 .icon2 {
   font-size: 3.5rem;
+   transition: transform 0.5s ease;
 }
 
 .txt4 .icon3 {
   font-size: 3.2rem;
+   transition: transform 0.5s ease;
 }
 
 .txt4 .icon1:hover,
 .icon2:hover,
 .icon3:hover {
   transform: translateY(-0.5rem);
-  transition: transform 0.3s ease;
 }
 
 .txt4 a {
@@ -208,6 +214,10 @@ html {
   text-align: center;
   font-size: 4.5rem;
   margin: 7rem 0rem 4rem 0rem;
+}
+
+.about-text span {
+  transition-duration: 0.5s;
 }
 
 .about-text span:hover {
@@ -249,6 +259,10 @@ html {
   margin: 7rem 0rem 4rem 0rem;
 }
 
+.skills-text span {
+  transition-duration: 0.5s;
+}
+
 .skills-text span:hover {
   color: red;
 }
@@ -278,6 +292,7 @@ html {
   border-bottom: rgb(179, 179, 179) solid 0.2rem;
   padding: 0.5rem;
   object-fit: contain;
+  transition-duration: 0.4s;
 }
 
 .skill-txt {
@@ -294,7 +309,6 @@ html {
 
 .skill-item img:hover {
   transform: scale3d(1.05, 1.05, 1.05);
-  transition-duration: 0.2s;
 }
 
 /* project */
@@ -302,6 +316,10 @@ html {
   text-align: center;
   font-size: 4.5rem;
   margin: 7rem 0rem 4rem 0rem;
+}
+
+.project-text span {
+  transition-duration: 0.5s;
 }
 
 .project-text span:hover {
@@ -331,6 +349,7 @@ html {
   object-fit: fill;
   border-radius: 1rem;
   border: grey 0.1rem solid;
+  transition-duration: 0.4s;
 }
 
 .project-paragraph {
@@ -339,7 +358,6 @@ html {
 
 .project-item img:hover {
   transform: scale3d(1.02, 1.02, 1.02);
-  transition-duration: 0.4s;
 }
 
 .link-btn {
@@ -362,6 +380,7 @@ html {
 .link-btn1 a {
   color: black;
   text-align: center;
+  transition-duration: 0.5s;
 }
 
 .link-btn1 a:hover {
@@ -373,6 +392,10 @@ html {
   text-align: center;
   font-size: 4.5rem;
   margin: 7rem 0rem 4rem 0rem;
+}
+
+.contact-text span {
+  transition-duration: 0.5s;
 }
 
 .contact-text span:hover {
@@ -452,6 +475,7 @@ textarea {
   border: grey solid 0.15rem;
   color: green;
   position: relative;
+  transition-duration: 0.5s;
 }
 
 .send-form {
@@ -503,11 +527,11 @@ textarea {
 .contact-item img {
   height: 70%;
   width: 100%;
+  transition-duration: 0.5s;
 }
 
 .contact-item img:hover {
   transform: scale3d(1.1, 1.1, 1.1);
-  transition-duration: 0.5s;
   height: 70%;
   width: 100%;
 }
@@ -542,6 +566,10 @@ textarea {
 
 .c1:disabled {
   color: black;
+}
+
+.copy {
+  transition-duration: 0.5s;
 }
 
 .copy:hover {
@@ -863,4 +891,26 @@ textarea {
 .loader img {
   height: 18rem;
   width: 24rem;
+}
+
+/* Scrollbar width */
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+/* Scrollbar background */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Scrollbar handle */
+::-webkit-scrollbar-thumb {
+  background-image: linear-gradient(
+    rgb(239, 163, 163),
+    rgb(238, 184, 238),
+    rgb(199, 199, 241),
+    rgb(206, 244, 206),
+    rgb(240, 202, 202)
+  );
+  border-radius: 2px;
 }

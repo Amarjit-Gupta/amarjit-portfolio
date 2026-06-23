@@ -19,7 +19,7 @@ const Project = ({ main }) => {
 
     return (
         <div id="project">
-            <p className="project-text"><span>My Project</span></p>
+            <p className="project-text"><span>My Projects</span></p>
             <div className="project1">
                 {projects?.map((v, i) => {
                     return (
