@@ -859,6 +859,7 @@ textarea {
 
 .link-btn2 {
   color: white;
+  transition-duration: 0.5s;
 }
 
 .link-btn2:hover {
