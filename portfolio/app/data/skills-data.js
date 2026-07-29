@@ -30,7 +30,7 @@ export const skills = [
         id:2,
         src:css,
         alt:"CSS3 logo",
-        txt:"CSS"
+        txt:"CSS3"
     },
     {
         id:3,
